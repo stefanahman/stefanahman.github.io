@@ -1,1 +1,12 @@
-Hello World
+---
+layout: default
+---
+{% for post in site.posts %}
+  {% if post.title %}
+    <h1 class="entry-title">
+      <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+    </h1>
+  {% endif %}
+  <div class="entry-content">{{ post.content }}</div>
+  <hr>
+{% endfor %}

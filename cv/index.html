@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>🙋🏼‍♂️ Stefan Åhman</title>
+    <meta name="description" content="Hello! 🙋🏼‍♂️">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+      main {
+        display: flex;
+      }
+
+      aside {
+        margin-right: 2rem;
+        min-width: 200px;
+        max-width: 240px;
+      }
+
+      article {
+        max-width: 800px;
+      }
+
+      article > div {
+        border-bottom: 1px solid rgb(33, 38, 45);
+      }
+
+      footer {
+        display: flex;
+        border-top: 1px solid rgb(33, 38, 45);
+        justify-content: space-between;
+      }
+
+      code {
+        background-color: #4f5d70;
+        border-radius: 3px;
+        border: 1px solid rgb(33, 38, 45);
+        padding: 2px;
+      }
+
+      div[role="skills"] > ul > li {
+        margin-bottom: 0.5rem;
+      }
+
+      div[role="experience"] > div {
+        margin-bottom: 30px;
+      }
+
+      *[role="experience-title"] {
+        margin-bottom: 0.6rem;
+      }
+
+      *[role="experience-company"] {
+        margin-top: 0.6rem;
+        margin-bottom: 0.2rem;
+      }
+
+      *[role="jong"]::before {
+        content: "🀄";
+        line-height: 0;
+      }
+
+      @media only screen and (max-width: 600px) {
+        main {
+          display: block;
+        }
+
+        aside {
+          max-width: initial;
+          margin-right: 0;
+        }
+
+        .avatar {
+          margin: 0 auto;
+        }
+      }
+
+      @media print {
+        body {
+          padding: 0rem;
+        }
+
+        .no-print, .no-print * {
+          display: none !important;
+        }
+
+        * {
+          border: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <aside>
+        <img class="avatar" src="https://avatars1.githubusercontent.com/u/1053201"/>
+        <h1 role="me-name">Stefan Åhman</h1>
+        <h4 role="me-title">Tech Lead and Full Stack Developer</h4>
+        <p role="me-introduction">
+          Mind of creating great code and efficient but robust solutions to realize great visions.
+        </p>
+        <p role="me-introduction">
+          I value smaller and open minded, less bureaucratic companies that are willing to try out new ideas and be outside the box.
+        </p>
+        <p role="me-introduction">
+          A long term vision I have is to be a <strong>principal architect</strong> somewhere and build an awesome company.
+        </p>
+        <p role="me-introduction">
+          Besides riding my motorcycle, I enjoy playing sports, exercise and taking care of my plants. My most recent interests are <a target="_blank" href="https://en.wikipedia.org/wiki/Ashtanga_vinyasa_yoga">ashtanga yoga</a> and <a target="_blank" href="https://en.wikipedia.org/wiki/Contract_bridge">contract bridge</a>.
+        </p>
+
+        <footer>
+          <p role="contact" class="no-print">
+            <a title="Github" target="_blank" href="https://github.com/stefanahman">
+              <i class="fab fa-github"></i>
+            </a>
+            <a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/stefanahman/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="javascript:if(window.print)window.print()">
+              <i class="fa fa-print"></i>
+            </a>
+          </p>
+          <p role="jong"></p>
+        </footer>
+      </aside>
+
+      <article>
+        <div role="values">
+          <h1>Values and viewpoints</h1>
+          <ul>
+            <li>Delivering value over get caught in details</li>
+            <li>Quality over shortcuts (with exceptions)</li>
+            <li>Do stuff you can be proud of</li>
+            <li>Static office hours are obsolete</li>
+            <li>The key to success is transparency and honesty</li>
+            <li>A funtional team is more important than an idea</li>
+            <li>Strongly considering making <code>git dad</code> an alias</li>
+          </ul>
+        </div>
+
+        <div role="skills">
+          <h1>Skills</h1>
+          <ul>
+            <li>Development
+              <ul>
+                <li><i class="fas fa-battery-full"></i> Ruby on Rails</li>
+                <li><i class="fas fa-battery-half"></i> Javascript/HTML/CSS</li>
+                <li><i class="fas fa-battery-quarter"></i> Elixir/Go/Java/Python</li>
+              </ul>
+            </li>
+            <li>Data crunching
+              <ul>
+                <li><i class="fas fa-battery-full"></i> PostgreSQL</li>
+                <li><i class="fas fa-battery-half"></i> MySQL</li>
+                <li><i class="fas fa-battery-quarter"></i> SQL Server</li>
+              </ul>
+            </li>
+            <li>Cloud platforms
+              <ul>
+                <li><i class="fas fa-battery-full"></i> Google Cloud Platform</li>
+                <li><i class="fas fa-battery-half"></i> Kubernetes/Terraform</li>
+                <li><i class="fas fa-battery-quarter"></i> Amazon Web Services/Microsoft Azure</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div role="experience">
+          <h1>Experience</h1>
+          <div>
+            <h3 role="experience-title">Exploring the world</h3>
+            <h4 role="experience-company">Not Stockholm, Sweden</h4>
+            <span role="experience-period">January 2022 - ?</span>
+            <p>After more than 7 years at my first workplace it is now time for me to go out and see the world. I'm not sure where I'm going or for how long. One thing for sure is that I want some contrast in life, see what's on the other side of the planet.</p>
+          </div>
+
+          <div>
+            <h3 role="experience-title">Consultant</h3>
+            <h4 role="experience-company">
+              <a target="_blank" href="https://www.linkedin.com/company/icaniwill-ab/">
+                ICANIWILL
+                <i class="fas fa-external-link-alt no-print"></i>
+              </a>
+              - Stockholm, Sweden
+            </h4>
+            <span role="experience-period">April 2021 - Ongoing</span>
+            <p>Developing a platform for internal purposes.</p>
+          </div>
+
+          <div>
+            <h3 role="experience-title">Tech Lead</h3>
+            <h4 role="experience-company">
+              <a target="_blank" href="https://www.linkedin.com/company/apoex-ab">
+                ApoEx
+                <i class="fas fa-external-link-alt no-print"></i>
+              </a>
+              - Stockholm, Sweden
+            </h4>
+            <span role="experience-period">September 2018 - January 2022</span>
+            <p>Lead the technical vision within the team and support developers in technical decision making. Responsible for migrating multiple full scale applications to Google Cloud and Kubernetes from an on-premise setup.</p>
+          </div>
+
+          <div>
+            <h3 role="experience-title">Full Stack Developer</h3>
+            <h4 role="experience-company">
+              <a target="_blank" href="https://www.linkedin.com/company/apoex-ab">
+                ApoEx
+                <i class="fas fa-external-link-alt no-print"></i>
+              </a>
+              - Stockholm, Sweden
+            </h4>
+            <span role="experience-period">September 2014 - January 2022</span>
+            <p>Lead developer for a system handling cytostatic/sterile extempore compounding within Sweden. With multiple integrations to multiple journal systems and support for order management, logistics, data analytics and invoicing for preparations as well as remainders.</p>
+            <p>Lead developer for a system handling dose dispensing within inpatient care within Sweden. Integrations to multiple journal systems and support for invoicing, logistics, data analytics per patient.</p>
+          </div>
+
+          <div>
+            <h3 role="experience-title">Android Developer</h3>
+            <h4 role="experience-company">
+              <a target="_blank" href="https://www.linkedin.com/company/audioapps">
+                AudioApps
+                <i class="fas fa-external-link-alt no-print"></i>
+              </a>
+              - Stockholm, Sweden
+            </h4>
+            <span role="experience-period">February 2012 - September 2014</span>
+            <p>We developed an audio guide for museums and exhibitions. By using QR codes, people could listen to a an audio description of the peace of art in front of them.</p>
+          </div>
+
+          <div>
+            <h3 role="experience-title">Student</h3>
+            <h4 role="experience-company">
+              <a target="_blank" href="https://www.kth.se/social/program/cinte/">
+                KTH Royal Institute of Technology
+                <i class="fas fa-external-link-alt no-print"></i>
+              </a>
+              - Stockholm, Sweden
+            </h4>
+            <span role="experience-period">September 2009 - September 2014</span>
+            <p>Degree Program in Information and Communication Technology, Master's Program, Software Engineering of Distributed Systems.</p>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script src="https://kit.fontawesome.com/f5d66f6ab6.js" crossorigin="anonymous"></script>
+  </body>
+</html>

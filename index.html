@@ -4,71 +4,31 @@
     <meta charset="utf-8">
     <title>🙋🏼‍♂️ Stefan Åhman</title>
     <meta name="description" content="Hello! 🙋🏼‍♂️">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Open+Sans');
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        height: 100%;
-        font-family: 'Open Sans';
-      }
-
       body {
-        display: flex;
         align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0;
-        background-color: #0d1117;
-        padding: 1rem;
-        min-height: 100%;
-        color: rgb(201, 209, 217);
-        font-size: 100%;
-      }
-
-      a {
-        padding: 0.0625rem 0.25rem;
-        text-decoration: none;
-        color: rgb(201, 209, 217);
-      }
-
-      .avatar {
-        position: relative;
-        flex-shrink: 0;
-        margin: 0 2rem 0 0;
-        border-radius: 50%;
-        box-shadow: inset 0 0 0.25rem 0.125rem rgba(20, 20, 34, 0.25);
-        background-image: url(https://avatars1.githubusercontent.com/u/1053201);
-        background-position: 50% 50%;
-        background-size: cover;
-        width: 12rem;
-        height: 12rem;
-      }
-
-      body > div {
-        display: flex;
-        align-items: center;
+        min-width: 300px;
       }
     </style>
   </head>
   <body>
+    <img class="avatar" src="https://avatars1.githubusercontent.com/u/1053201"/>
     <div>
-      <div class="avatar"></div>
-      <div>
-        <h1>Stefan Åhman</h1>
-        <h3>Make great code.</h3>
-        <p id="contact">
-          <a target="_blank" href="https://github.com/stefanahman">
-            <i class="fab fa-github"></i>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/stefanahman/">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </p>
-      </div>
+      <h1>Stefan Åhman</h1>
+      <h3>Make great code.</h3>
+      <p role="contact">
+        <a title="Github" target="_blank" href="https://github.com/stefanahman">
+          <i class="fab fa-github"></i>
+        </a>
+        <a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/stefanahman/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a title="CV" target="_blank" href="cv" style="font-family: sans-serif;">
+          <strong>CV</strong>
+        </a>
+      </p>
     </div>
     <script src="https://kit.fontawesome.com/f5d66f6ab6.js" crossorigin="anonymous"></script>
   </body>

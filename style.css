@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: 'Open Sans';
+}
+
+body {
+  background-color: #0d1117;
+  color: rgb(201, 209, 217);
+  min-height: 100%;
+  margin: 0;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(201, 209, 217);
+}
+
+a:hover {
+  color: white;
+}
+
+*[role="contact"] a {
+  padding: 0.0625rem 0.25rem;
+}
+
+.avatar {
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  margin: 0 2rem 0 0;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0.25rem 0.125rem rgba(20, 20, 34, 0.25);
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 12rem;
+  height: 12rem;
+}

@@ -28,7 +28,7 @@ a:hover {
   color: white;
 }
 
-*[role="contact"] a {
+.contact a {
   padding: 0.0625rem 0.25rem;
 }
 

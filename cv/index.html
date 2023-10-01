@@ -38,6 +38,13 @@
         padding: 2px;
       }
 
+      hr {
+        border: none;
+        height: 1px;
+        border-bottom: 1px solid rgb(33, 38, 45);
+        margin: 0;
+      }
+
       div[role="skills"] > ul > li {
         margin-bottom: 0.5rem;
       }
@@ -58,6 +65,18 @@
       *[role="jong"]::before {
         content: "🀄";
         line-height: 0;
+      }
+
+      .experience-time-tense-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .experience-time-tense {
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: rgb(44, 50, 60);
+        text-transform: uppercase;
       }
 
       @media only screen and (max-width: 600px) {
@@ -179,6 +198,15 @@
           <div>
             <h3 role="experience-title">Software Engineer</h3>
             <h4 role="experience-company">
+              Stealh startup
+            </h4>
+            <span role="experience-period">Contract · November 2022 - Ongoing</span>
+            <p>Coming soon…</p>
+          </div>
+
+          <div>
+            <h3 role="experience-title">Software Engineer</h3>
+            <h4 role="experience-company">
               <a target="_blank" href="https://www.linkedin.com/company/devbox-stockholm/">
                 Devbox
                 <i class="fas fa-external-link-alt no-print"></i>
@@ -187,13 +215,6 @@
             </h4>
             <span role="experience-period">Full time · June 2022 - Ongoing</span>
             <p>Full time employed software engineer consultant. It is a new time to explore new environments, meet people and grow within the software industry.</p>
-          </div>
-
-          <div>
-            <h3 role="experience-title">Exploring the world</h3>
-            <h4 role="experience-company">Not Stockholm, Sweden</h4>
-            <span role="experience-period">Full time · January 2022 - July 2022</span>
-            <p>After more than 7 years at my first workplace it is now time for me to go out and see the world. I'm not sure where I'm going or for how long. One thing for sure is that I want some contrast in life, see what's on the other side of the planet.</p>
           </div>
 
           <div>
@@ -207,6 +228,35 @@
             </h4>
             <span role="experience-period">Freelance · April 2021 - Ongoing</span>
             <p>Developing a platform for internal purposes.</p>
+          </div>
+
+          <div class="experience-time-tense-container no-print">
+            <span class="experience-time-tense">Present</span>
+            <hr />
+            <span class="experience-time-tense">Past</span>
+          </div>
+
+          <div>
+            <h3 role="experience-title">Software Engineer</h3>
+            <h4 role="experience-company">
+              ApoEx System AB
+              - Stockholm, Sweden
+            </h4>
+            <span role="experience-period">Contract · September 2022 - September 2023</span>
+            <p>
+              Lead developer and maintainer of the journal system Link, with the core functionality to serve as the journal system for veterinarians in Sweden.
+              While maintaining the system, such as being compliant with the Swedish law, implementing security updates, I was also responsible for the development of new features, taking care of and improving background jobs.
+            </p>
+            <p>
+              Building an integration with Jordbruksverket, the Swedish Board of Agriculture, to be able to keep the data up to date and in sync with the national database.
+            </p>
+          </div>
+
+          <div>
+            <h3 role="experience-title">Exploring the world</h3>
+            <h4 role="experience-company">Not Stockholm, Sweden</h4>
+            <span role="experience-period">Full time · January 2022 - July 2022</span>
+            <p>After more than 7 years at my first workplace it is now time for me to go out and see the world. I'm not sure where I'm going or for how long. One thing for sure is that I want some contrast in life, see what's on the other side of the planet.</p>
           </div>
 
           <div>

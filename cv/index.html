@@ -88,6 +88,25 @@
         color: rgb(198, 173, 141);
       }
 
+      #past-experiences {
+        display: none;
+      }
+
+      #show-past-experiences-button {
+        margin: 0 0 1rem 0;
+        padding: 0.5rem 1rem;
+        background-color: #3F4B3C;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      #show-past-experiences-button:hover {
+        /* a bit brighter */
+        background-color: #4B5A45;
+      }
+
       .om::before {
         content: "ॐ";
         line-height: 0;
@@ -96,6 +115,7 @@
       .experience-time-tense-container {
         display: flex;
         flex-direction: column;
+        margin-bottom: 30px;
       }
 
       .experience-time-tense {
@@ -131,6 +151,10 @@
 
         * {
           border: none !important;
+        }
+
+        #past-experiences {
+          display: block;
         }
       }
     </style>
@@ -260,98 +284,108 @@
             <p>Developing a platform for internal purposes.</p>
           </div>
 
-          <div class="experience-time-tense-container no-print">
-            <span class="experience-time-tense">Present</span>
-            <hr />
-            <span class="experience-time-tense">Past</span>
-          </div>
+          <button
+            id="show-past-experiences-button"
+            class="no-print"
+            onclick="document.getElementById('past-experiences').style.display = 'block'; this.style.display = 'none';"
+          >
+            Show past experiences
+          </button>
 
-          <div>
-            <h3 class="experience-company">
-              <a target="_blank" href="https://www.savants.com/">
-                Savant
-              </a>
-              <span>— Software Engineer</span>
-            </h3>
-            <span class="experience-location">Stockholm, Sweden - Hybrid</span>
-            <span class="experience-period">Contract · November 2022 - August 2024</span>
-            <p>
-              As a consultant on a food and beverage mobile app platform, I was instrumental in developing both the frontend and backend. In close collaboration with the product owner and designer, I crafted an intuitive and engaging UI. Additionally, I took on critical backend responsibilities, including API integration, database design, data modeling, internal CMS development, and infrastructure setup, ensuring a seamless, scalable, and user-centric app experience.
-            </p>
-          </div>
+          <div id="past-experiences">
+            <div class="experience-time-tense-container no-print">
+              <span class="experience-time-tense">Present</span>
+              <hr />
+              <span class="experience-time-tense">Past</span>
+            </div>
 
-          <div>
-            <h3 class="experience-company">
-              ApoEx System AB
-              <span>— Software Engineer</span>
-            </h3>
-            <span class="experience-location">Stockholm, Sweden - Remote</span>
-            <span class="experience-period">Contract · September 2022 - September 2023</span>
-            <p>
-              Lead developer and maintainer of the journal system Link, with the core functionality to serve as the journal system for veterinarians in Sweden.
-              While maintaining the system, such as being compliant with the Swedish law, implementing security updates, I was also responsible for the development of new features, taking care of and improving background jobs.
-            </p>
-            <p>
-              Building an integration with Jordbruksverket, the Swedish Board of Agriculture, to be able to keep the data up to date and in sync with the national database.
-            </p>
-          </div>
+            <div>
+              <h3 class="experience-company">
+                <a target="_blank" href="https://www.savants.com/">
+                  Savant
+                </a>
+                <span>— Software Engineer</span>
+              </h3>
+              <span class="experience-location">Stockholm, Sweden - Hybrid</span>
+              <span class="experience-period">Contract · November 2022 - August 2024</span>
+              <p>
+                As a consultant on a food and beverage mobile app platform, I was instrumental in developing both the frontend and backend. In close collaboration with the product owner and designer, I crafted an intuitive and engaging UI. Additionally, I took on critical backend responsibilities, including API integration, database design, data modeling, internal CMS development, and infrastructure setup, ensuring a seamless, scalable, and user-centric app experience.
+              </p>
+            </div>
 
-          <div>
-            <h3 class="experience-company">
-              Exploring the world
-            </h3>
-            <span class="experience-location">Not Stockholm, Sweden - Remote</span>
-            <span class="experience-period">Full time · January 2022 - July 2022</span>
-            <p>After more than 7 years at my first workplace it is now time for me to go out and see the world. I'm not sure where I'm going or for how long. One thing for sure is that I want some contrast in life, see what's on the other side of the planet.</p>
-          </div>
+            <div>
+              <h3 class="experience-company">
+                ApoEx System AB
+                <span>— Software Engineer</span>
+              </h3>
+              <span class="experience-location">Stockholm, Sweden - Remote</span>
+              <span class="experience-period">Contract · September 2022 - September 2023</span>
+              <p>
+                Lead developer and maintainer of the journal system Link, with the core functionality to serve as the journal system for veterinarians in Sweden.
+                While maintaining the system, such as being compliant with the Swedish law, implementing security updates, I was also responsible for the development of new features, taking care of and improving background jobs.
+              </p>
+              <p>
+                Building an integration with Jordbruksverket, the Swedish Board of Agriculture, to be able to keep the data up to date and in sync with the national database.
+              </p>
+            </div>
 
-          <div>
-            <h3 class="experience-company">
-              <a target="_blank" href="https://www.linkedin.com/company/apoex-ab">
-                ApoEx
+            <div>
+              <h3 class="experience-company">
+                Exploring the world
+              </h3>
+              <span class="experience-location">Not Stockholm, Sweden - Remote</span>
+              <span class="experience-period">Full time · January 2022 - July 2022</span>
+              <p>After more than 7 years at my first workplace it is now time for me to go out and see the world. I'm not sure where I'm going or for how long. One thing for sure is that I want some contrast in life, see what's on the other side of the planet.</p>
+            </div>
+
+            <div>
+              <h3 class="experience-company">
+                <a target="_blank" href="https://www.linkedin.com/company/apoex-ab">
+                  ApoEx
+                </a>
                 <span>— Tech Lead</span>
-              </a>
-            </h3>
-            <span class="experience-location">Stockholm, Sweden - Hybrid</span>
-            <span class="experience-period">Full time · September 2018 - January 2022</span>
-            <p>Lead the technical vision within the team and support developers in technical decision making. Responsible for migrating multiple full scale applications to Google Cloud and Kubernetes from an on-premise setup.</p>
-          </div>
+              </h3>
+              <span class="experience-location">Stockholm, Sweden - Hybrid</span>
+              <span class="experience-period">Full time · September 2018 - January 2022</span>
+              <p>Lead the technical vision within the team and support developers in technical decision making. Responsible for migrating multiple full scale applications to Google Cloud and Kubernetes from an on-premise setup.</p>
+            </div>
 
-          <div>
-            <h3 class="experience-company">
-              <a target="_blank" href="https://www.linkedin.com/company/apoex-ab">
-                ApoEx
-              </a>
-              <span>— Full Stack Developer</span>
-            </h3>
-            <span class="experience-location">Stockholm, Sweden - Hybrid</span>
-            <span class="experience-period">Full time · September 2014 - January 2022</span>
-            <p>Lead developer for a system handling cytostatic/sterile extempore compounding within Sweden. With multiple integrations to multiple journal systems and support for order management, logistics, data analytics and invoicing for preparations as well as remainders.</p>
-            <p>Lead developer for a system handling dose dispensing within inpatient care within Sweden. Integrations to multiple journal systems and support for invoicing, logistics, data analytics per patient.</p>
-          </div>
+            <div>
+              <h3 class="experience-company">
+                <a target="_blank" href="https://www.linkedin.com/company/apoex-ab">
+                  ApoEx
+                </a>
+                <span>— Full Stack Developer</span>
+              </h3>
+              <span class="experience-location">Stockholm, Sweden - Hybrid</span>
+              <span class="experience-period">Full time · September 2014 - January 2022</span>
+              <p>Lead developer for a system handling cytostatic/sterile extempore compounding within Sweden. With multiple integrations to multiple journal systems and support for order management, logistics, data analytics and invoicing for preparations as well as remainders.</p>
+              <p>Lead developer for a system handling dose dispensing within inpatient care within Sweden. Integrations to multiple journal systems and support for invoicing, logistics, data analytics per patient.</p>
+            </div>
 
-          <div>
-            <h3 class="experience-company">
-              <a target="_blank" href="https://www.linkedin.com/company/audioapps">
-                AudioApps
-              </a>
-              <span>— Android Developer</span>
-            </h3>
-            <span class="experience-location">Stockholm, Sweden - Remote</span>
-            <span class="experience-period">Freelance · February 2012 - September 2014</span>
-            <p>We developed an audio guide for museums and exhibitions. By using QR codes, people could listen to a an audio description of the peace of art in front of them.</p>
-          </div>
+            <div>
+              <h3 class="experience-company">
+                <a target="_blank" href="https://www.linkedin.com/company/audioapps">
+                  AudioApps
+                </a>
+                <span>— Android Developer</span>
+              </h3>
+              <span class="experience-location">Stockholm, Sweden - Remote</span>
+              <span class="experience-period">Freelance · February 2012 - September 2014</span>
+              <p>We developed an audio guide for museums and exhibitions. By using QR codes, people could listen to a an audio description of the peace of art in front of them.</p>
+            </div>
 
-          <div>
-            <h3 class="experience-company">
-              <a target="_blank" href="https://www.kth.se/social/program/cinte/">
-                KTH Royal Institute of Technology
-              </a>
-              <span>— Student</span>
-            </h3>
-            <span class="experience-location">Stockholm, Sweden - Hybrid</span>
-            <span class="experience-period">September 2009 - September 2014</span>
-            <p>Degree Program in Information and Communication Technology, Master's Program, Software Engineering of Distributed Systems.</p>
+            <div>
+              <h3 class="experience-company">
+                <a target="_blank" href="https://www.kth.se/social/program/cinte/">
+                  KTH Royal Institute of Technology
+                </a>
+                <span>— Student</span>
+              </h3>
+              <span class="experience-location">Stockholm, Sweden - Hybrid</span>
+              <span class="experience-period">September 2009 - September 2014</span>
+              <p>Degree Program in Information and Communication Technology, Master's Program, Software Engineering of Distributed Systems.</p>
+            </div>
           </div>
         </div>
       </article>

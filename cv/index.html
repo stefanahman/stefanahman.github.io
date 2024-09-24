@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
     <title>CV - 🙋🏼‍♂️ Stefan Åhman</title>
     <meta name="description" content="Hello! 🙋🏼‍♂️">
@@ -9,16 +9,20 @@
     <style>
       main {
         display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        max-width: 800px;
       }
 
       aside {
-        margin-right: 2rem;
-        min-width: 200px;
-        max-width: 240px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
       }
 
       article {
-        max-width: 800px;
+        display: flex;
+        flex-direction: column;
       }
 
       article > div {
@@ -45,6 +49,20 @@
         margin: 0;
       }
 
+      .me-name {
+        font-size: 2rem;
+        margin: 1rem 0 0 0;
+      }
+
+      .me-title {
+        font-size: 1.2rem;
+        margin: 0;
+      }
+
+      .me-introduction {
+        margin: 0.5rem 0;
+      }
+
       .skills > ul > li {
         margin-bottom: 0.5rem;
       }
@@ -62,8 +80,12 @@
         margin-bottom: 0.2rem;
       }
 
+      .experience-location {
+        display: block;
+      }
+
       .experience-period {
-        color: rgb(202, 194, 184);
+        color: rgb(198, 173, 141);
       }
 
       .om::before {
@@ -118,7 +140,7 @@
       <aside>
         <img class="avatar" src="https://avatars1.githubusercontent.com/u/1053201"/>
         <h1 class="me-name">Stefan Åhman</h1>
-        <h4 class="me-title">Software Engineer</h4>
+        <h3 class="me-title">Software Engineer</h3>
         <p class="me-introduction">
           Passionate about creating clean, efficient, and robust code to bring innovative visions to life. I thrive in small, open-minded, and agile companies that value creativity and out-of-the-box thinking.
         </p>
@@ -135,13 +157,13 @@
         <footer>
           <p class="contact no-print">
             <a title="Github" target="_blank" href="https://github.com/stefanahman">
-              <i class="fab fa-github"></i>
+              <img class="icon" src="../assets/github.svg" alt="Github" width="16" height="16" />
             </a>
             <a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/stefanahman/">
-              <i class="fab fa-linkedin"></i>
+              <img class="icon" src="../assets/linkedin.svg" alt="LinkedIn" width="16" height="16" />
             </a>
             <a href="javascript:if(window.print)window.print()">
-              <i class="fa fa-print"></i>
+              <img class="icon" src="../assets/printer.svg" alt="LinkedIn" width="16" height="16" />
             </a>
           </p>
           <p class="om"></p>
@@ -200,54 +222,40 @@
         <div class="experience">
           <h1>Experience</h1>
           <div>
-            <h3 class="experience-title">Software Engineer</h3>
-            <h4 class="experience-company">
+            <h3 class="experience-company">
               <a target="_blank" href="https://www.linkedin.com/company/hemnet/">
                 Hemnet
-                <i class="fas fa-external-link-alt no-print"></i>
               </a>
-            </h4>
+              <span>— Software Engineer</span>
+            </h3>
+            <span class="experience-location">Stockholm, Sweden - Hybrid</span>
             <span class="experience-period">Contract · August 2024 - Ongoing</span>
             <p>
               Working in the B2B team, developing and maintaining the platform for real estate agents.
             </p>
           </div>
-          <div>
-            <h3 class="experience-title">Software Engineer</h3>
-            <h4 class="experience-company">
-              <a target="_blank" href="https://www.savants.com/">
-                Savant
-                <i class="fas fa-external-link-alt no-print"></i>
-              </a>
-            </h4>
-            <span class="experience-period">Contract · November 2022 - August 2024</span>
-            <p>
-              As a consultant on a food and beverage mobile app platform, I was instrumental in developing both the frontend and backend. In close collaboration with the product owner and designer, I crafted an intuitive and engaging UI. Additionally, I took on critical backend responsibilities, including API integration, database design, data modeling, internal CMS development, and infrastructure setup, ensuring a seamless, scalable, and user-centric app experience.
-            </p>
-          </div>
 
           <div>
-            <h3 class="experience-title">Software Engineer</h3>
-            <h4 class="experience-company">
+            <h3 class="experience-company">
               <a target="_blank" href="https://www.linkedin.com/company/devbox-stockholm/">
                 Devbox
-                <i class="fas fa-external-link-alt no-print"></i>
               </a>
-              - Stockholm, Sweden
-            </h4>
+              <span>— Software Engineer</span>
+            </h3>
+            <span class="experience-location">Stockholm, Sweden - Hybrid</span>
             <span class="experience-period">Full time · June 2022 - Ongoing</span>
             <p>Employed software engineer consultant. A new time to explore new environments, meet people and grow within the software industry.</p>
           </div>
 
           <div>
-            <h3 class="experience-title">Software Engineer</h3>
-            <h4 class="experience-company">
+            <h3 class="experience-company">
               <a target="_blank" href="https://www.linkedin.com/company/icaniwill-ab/">
                 ICANIWILL
                 <i class="fas fa-external-link-alt no-print"></i>
               </a>
-              - Stockholm, Sweden
-            </h4>
+              <span>— Software Engineer</span>
+            </h3>
+            <span class="experience-location">Stockholm, Sweden - Remote</span>
             <span class="experience-period">Freelance · April 2021 - Ongoing</span>
             <p>Developing a platform for internal purposes.</p>
           </div>
@@ -259,11 +267,25 @@
           </div>
 
           <div>
-            <h3 class="experience-title">Software Engineer</h3>
-            <h4 class="experience-company">
+            <h3 class="experience-company">
+              <a target="_blank" href="https://www.savants.com/">
+                Savant
+              </a>
+              <span>— Software Engineer</span>
+            </h3>
+            <span class="experience-location">Stockholm, Sweden - Hybrid</span>
+            <span class="experience-period">Contract · November 2022 - August 2024</span>
+            <p>
+              As a consultant on a food and beverage mobile app platform, I was instrumental in developing both the frontend and backend. In close collaboration with the product owner and designer, I crafted an intuitive and engaging UI. Additionally, I took on critical backend responsibilities, including API integration, database design, data modeling, internal CMS development, and infrastructure setup, ensuring a seamless, scalable, and user-centric app experience.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="experience-company">
               ApoEx System AB
-              - Stockholm, Sweden
-            </h4>
+              <span>— Software Engineer</span>
+            </h3>
+            <span class="experience-location">Stockholm, Sweden - Remote</span>
             <span class="experience-period">Contract · September 2022 - September 2023</span>
             <p>
               Lead developer and maintainer of the journal system Link, with the core functionality to serve as the journal system for veterinarians in Sweden.
@@ -275,67 +297,64 @@
           </div>
 
           <div>
-            <h3 class="experience-title">Exploring the world</h3>
-            <h4 class="experience-company">Not Stockholm, Sweden</h4>
+            <h3 class="experience-company">
+              Exploring the world
+            </h3>
+            <span class="experience-location">Not Stockholm, Sweden - Remote</span>
             <span class="experience-period">Full time · January 2022 - July 2022</span>
             <p>After more than 7 years at my first workplace it is now time for me to go out and see the world. I'm not sure where I'm going or for how long. One thing for sure is that I want some contrast in life, see what's on the other side of the planet.</p>
           </div>
 
           <div>
-            <h3 class="experience-title">Tech Lead</h3>
-            <h4 class="experience-company">
+            <h3 class="experience-company">
               <a target="_blank" href="https://www.linkedin.com/company/apoex-ab">
                 ApoEx
-                <i class="fas fa-external-link-alt no-print"></i>
+                <span>— Tech Lead</span>
               </a>
-              - Stockholm, Sweden
-            </h4>
+            </h3>
+            <span class="experience-location">Stockholm, Sweden - Hybrid</span>
             <span class="experience-period">Full time · September 2018 - January 2022</span>
             <p>Lead the technical vision within the team and support developers in technical decision making. Responsible for migrating multiple full scale applications to Google Cloud and Kubernetes from an on-premise setup.</p>
           </div>
 
           <div>
-            <h3 class="experience-title">Full Stack Developer</h3>
-            <h4 class="experience-company">
+            <h3 class="experience-company">
               <a target="_blank" href="https://www.linkedin.com/company/apoex-ab">
                 ApoEx
-                <i class="fas fa-external-link-alt no-print"></i>
               </a>
-              - Stockholm, Sweden
-            </h4>
+              <span>— Full Stack Developer</span>
+            </h3>
+            <span class="experience-location">Stockholm, Sweden - Hybrid</span>
             <span class="experience-period">Full time · September 2014 - January 2022</span>
             <p>Lead developer for a system handling cytostatic/sterile extempore compounding within Sweden. With multiple integrations to multiple journal systems and support for order management, logistics, data analytics and invoicing for preparations as well as remainders.</p>
             <p>Lead developer for a system handling dose dispensing within inpatient care within Sweden. Integrations to multiple journal systems and support for invoicing, logistics, data analytics per patient.</p>
           </div>
 
           <div>
-            <h3 class="experience-title">Android Developer</h3>
-            <h4 class="experience-company">
+            <h3 class="experience-company">
               <a target="_blank" href="https://www.linkedin.com/company/audioapps">
                 AudioApps
-                <i class="fas fa-external-link-alt no-print"></i>
               </a>
-              - Stockholm, Sweden
-            </h4>
+              <span>— Android Developer</span>
+            </h3>
+            <span class="experience-location">Stockholm, Sweden - Remote</span>
             <span class="experience-period">Freelance · February 2012 - September 2014</span>
             <p>We developed an audio guide for museums and exhibitions. By using QR codes, people could listen to a an audio description of the peace of art in front of them.</p>
           </div>
 
           <div>
-            <h3 class="experience-title">Student</h3>
-            <h4 class="experience-company">
+            <h3 class="experience-company">
               <a target="_blank" href="https://www.kth.se/social/program/cinte/">
                 KTH Royal Institute of Technology
-                <i class="fas fa-external-link-alt no-print"></i>
               </a>
-              - Stockholm, Sweden
-            </h4>
+              <span>— Student</span>
+            </h3>
+            <span class="experience-location">Stockholm, Sweden - Hybrid</span>
             <span class="experience-period">September 2009 - September 2014</span>
             <p>Degree Program in Information and Communication Technology, Master's Program, Software Engineering of Distributed Systems.</p>
           </div>
         </div>
       </article>
     </main>
-    <script src="https://kit.fontawesome.com/f5d66f6ab6.js" crossorigin="anonymous"></script>
   </body>
 </html>

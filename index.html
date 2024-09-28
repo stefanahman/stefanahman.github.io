@@ -11,12 +11,29 @@
         align-items: center;
         gap: 2rem;
       }
-      .text-container {
-        flex-basis: 280px;
-      }
       .text-container h1 {
         font-size: 2.5rem;
         margin: 0;
+      }
+      .avatar {
+        width: 260px;
+        height: 260px;
+      }
+      @media (max-width: 650px) {
+        body {
+          padding: 1rem;
+        }
+        .avatar {
+          width: 120px;
+          height: 120px;
+        }
+        .text-container h1 {
+          font-size: 1.6rem;
+        }
+        .text-container p {
+          font-size: 0.8rem;
+          margin: 0.5rem 0;
+        }
       }
     </style>
   </head>
